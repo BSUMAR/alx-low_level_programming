@@ -2,15 +2,15 @@
 
 /**
  * _abs - compute the absolute value of an integer
- * @: the integer to check
- * Return: the absolute value of int
+ * @a: the integer to check
+ * Return: always a
  */
 
-int _abs(void)
+int _abs(int a)
 {
-	if (n >= 0)
-	{
-		return (n);
-	}
-	return (-n);
+	if (a < 0)
+		a = -(a);
+	else if (a >= 0)
+		a = a;
+	return (a);
 }
